@@ -2,6 +2,25 @@
 
 The `ParallaxHero` is a custom Web Component built using [Lit](https://lit.dev/). It encapsulates a dynamic, mouse-tracking background parallax effect originally created (by me) in the NavigoLearn repository (in React), making it reusable across any web framework (or vanilla HTML).
 
+<!--
+```
+<custom-element-demo height="500">
+  <template>
+    <script type="module" src="dist/ParallaxHero.js"></script>
+    <next-code-block></next-code-block>
+  </template>
+</custom-element-demo>
+```
+-->
+```html
+<parallax-hero></parallax-hero>
+
+<!-- Overlay some text to demonstrate the background effect -->
+<div style="position: relative; z-index: 10; display: flex; align-items: center; justify-content: center; height: 100vh; pointer-events: none;">
+  <h1 style="font-family: sans-serif; color: #1e293b; font-size: 3rem;">Move your mouse!</h1>
+</div>
+```
+
 ## Installation & Setup
 
 1. Make sure you have the Lit library installed in your project:
