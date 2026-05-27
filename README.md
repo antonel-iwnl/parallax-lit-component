@@ -28,7 +28,7 @@ Because it inherits from `LitElement`, it leverages an efficient Shadow DOM upda
 Simply import the definition script, and use the custom element tag `<parallax-hero>` anywhere in your markup:
 
 ```html
-<script type="module" src="./path/to/ParallaxHero.js"></script>
+<script type="module" src="./path/to/ParallaxHero.ts"></script>
 
 <body>
   <!-- The component has absolute positioning and takes up 100vw/100vh by default -->
