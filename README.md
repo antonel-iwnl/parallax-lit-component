@@ -33,6 +33,11 @@ The `ParallaxHero` is a custom Web Component built using [Lit](https://lit.dev/)
    npm install @lit/react
    ```
 
+3. You can also just install it via npm:
+   ```bash
+   npm i parallax-lit-hero
+   ```
+
 ## How It Works
 
 The component uses an internal `requestAnimationFrame` loop that runs independently of your application's main framework render cycle. It performs two main animations:
