@@ -6,7 +6,7 @@ The `ParallaxHero` is a custom Web Component built using [Lit](https://lit.dev/)
 ```
 <custom-element-demo height="500">
   <template>
-    <script type="module" src="dist/parallax-hero.bundle.js"></script>
+    <script type="module" src="https://unpkg.com/parallax-lit-hero@latest/dist/parallax-hero.bundle.js"></script>
     <next-code-block></next-code-block>
   </template>
 </custom-element-demo>
@@ -31,11 +31,6 @@ The `ParallaxHero` is a custom Web Component built using [Lit](https://lit.dev/)
 2. If you are importing this specifically into a React application, you will also need the `@lit/react` wrapper to seamlessly pass events and props:
    ```bash
    npm install @lit/react
-   ```
-
-3. You can also just install it via npm:
-   ```bash
-   npm i parallax-lit-hero
    ```
 
 ## How It Works
