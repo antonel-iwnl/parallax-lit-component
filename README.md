@@ -6,7 +6,7 @@ The `ParallaxHero` is a custom Web Component built using [Lit](https://lit.dev/)
 ```
 <custom-element-demo height="500">
   <template>
-    <script type="module" src="dist/ParallaxHero.js"></script>
+    <script type="module" src="dist/parallax-hero.bundle.js"></script>
     <next-code-block></next-code-block>
   </template>
 </custom-element-demo>
