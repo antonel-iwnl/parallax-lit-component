@@ -1,2 +1,7 @@
-node_modules/
-.DS_Store
+# Ignore everything
+*
+
+# Except these specific files
+!ParallaxHero.ts
+!README.md
+!.gitignore

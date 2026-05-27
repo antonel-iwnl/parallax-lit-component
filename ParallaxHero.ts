@@ -58,7 +58,7 @@ export class ParallaxHero extends LitElement {
   `;
 
   @state()
-  private accessor parallaxNodes: ParallaxObject[] = [];
+  private parallaxNodes: ParallaxObject[] = [];
 
   private viewCoords = { x: 0, y: 0 };
   private mousePosition = { x: 0, y: 0 };
