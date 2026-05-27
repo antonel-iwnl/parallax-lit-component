@@ -32,6 +32,11 @@ The `ParallaxHero` is a custom Web Component built using [Lit](https://lit.dev/)
    ```bash
    npm install @lit/react
    ```
+   
+3. You can also just install it using npm
+   ```bash
+   npm install parallax-lit-hero
+   ```
 
 ## How It Works
 
