@@ -104,24 +104,23 @@ export default App;
 
 You can customize the appearance and behavior directly within `ParallaxHero.ts`:
 
-### 1. Modifying the Shapes and Colors
-Inside the `render()` method, look for the mapped nodes:
+### 1. Fully Customizing the SVG Shapes and Colors
+Because the element uses standard SVG in Lit's \`html\` template, the SVG graphics can be fully customized! You can swap the internal shapes for any standard SVG element (paths, polygons, images, etc.).
+
+Inside the \`render()\` method, look for the mapped nodes:
 ```js
-<rect
-  x="${node.targetX}"
-  y="${node.currentY}"
-  width="96"  /* Change width */
-  height="32" /* Change height */
-  rx="4"      /* Border radius */
-  ry="4"      /* Border radius */
+<circle
+  cx="\${node.targetX}"
+  cy="\${node.currentY}"
+  r="80"
   class="parallax-node"
-></rect>
+></circle>
 ```
-To change the color, update the static CSS styles defined at the top of the class:
+To change the color, add gradients, or update stroke widths, modify the static CSS styles defined at the top of the class along with the SVG \`<defs>\` block:
 ```css
-rect.parallax-node {
-  fill: white;          /* Change fill color */
-  stroke: #94a3b8;      /* Change border color */
+.parallax-node {
+  fill: url(#node-gradient);      /* Points to the radial gradient */
+  stroke: #94a3b8;                /* Change border color */
   stroke-width: 2px;
 }
 ```
@@ -148,3 +147,18 @@ const RANDOM_OFFSET = 0.7;  // How much randomness in their placement
     y: lerp(this.viewCoords.y, DISTANCE_Y / 12, 0.2),
   };
   ```
+
+## Attributes
+
+Currently, the `<parallax-hero>` component operates primarily as a standalone drop-in background. It does not expose any defined standard reactive HTML attributes (like `speed`, `spacing`, or `color`). It relies on internal constants and its local `:host` styling.
+
+*Want to add your own attributes?*
+Because this component is built with Lit, adding custom properties is super easy. Simply import `@property` from Lit and add it to a class variable inside `ParallaxHero.ts` to allow configuration directly from the DOM!
+
+```typescript
+@property({ type: Number })
+spacingX = 250;
+```
+```html
+<parallax-hero spacingX="400"></parallax-hero>
+```
