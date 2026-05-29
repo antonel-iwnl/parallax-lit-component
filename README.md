@@ -1,6 +1,6 @@
 # ParallaxHero Web Component
 
-The `ParallaxHero` is a custom Web Component built using [Lit](https://lit.dev/). It encapsulates a dynamic, mouse-tracking background parallax effect originally created (by me) in the NavigoLearn repository (in React), making it reusable across any web framework (or vanilla HTML).
+The `ParallaxHero` is a custom Web Component built using [Lit](https://lit.dev/). It encapsulates a dynamic, mouse-tracking background parallax effect originally created in the NavigoLearn repository (in React), making it reusable across any web framework (or vanilla HTML).
 
 <!--
 ```
